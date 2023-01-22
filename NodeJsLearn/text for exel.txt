@@ -1,0 +1,51 @@
+
+---------What is nodeJS function ---------------
+Node.js is a JavaScript runtime that allows developers to run JavaScript on the server side. The main functions of Node.js include:
+
+Server-side scripting: Node.js can be used to create web servers and web applications using JavaScript.
+
+Network programming: Node.js provides a way to create network applications, such as HTTP and TCP/IP servers and clients.
+
+File I/O: Node.js provides built-in modules for file I/O operations, such as reading and writing files.
+
+Database management: Node.js can be used to interact with databases, such as MongoDB and MySQL, using modules like Mongoose and MySQL.
+
+Event-driven programming: Node.js uses an event-driven, non-blocking I/O model, which makes it well-suited for real-time, data-intensive applications.
+
+Package management: Node.js has a package manager called npm, which makes it easy to install and manage additional modules and packages.
+
+Building command line tools: Node.js can be used to build command line tools and utilities.
+
+Concurrency : Node.js uses a single-threaded, event-loop model, which allows it to handle thousands of concurrent connections efficiently.
+
+-----Some of the most commonly used build-in global objects-----------------
+__filename: This global variable represents the filename of the code being executed. It can be used to determine the current location of the code being executed.
+
+__dirname: This global variable represents the directory name of the code being executed. It can be used to determine the current directory of the code being executed.
+
+module: This global variable represents the current module being executed. It can be used to access the exports of the current module and to add properties and methods to the exports object.
+
+exports: This global variable is an object that is used to export methods and properties from a module. It's often used as a shorthand for module.exports
+
+require(): This function is used to include and use modules in a Node.js application. It returns an object that contains the exports of the specified module.
+
+global: This global object contains properties and methods that are available throughout the entire application, including in modules.
+
+process: This global object contains information about the current Node.js process, such as the current working directory and environment variables.
+
+Buffer: This class is a global, it allows Node.js to handle and manipulate binary data.
+
+setTimeout and setInterval : These global functions can be used to schedule function calls after a specified time interval.
+
+console: provides methods for logging messages to the console
+
+---How to find a prefab module--------------
+To find a prefab module, you can visit the Node.js website (nodejs.org) and 
+navigate to the version of Node.js that you are using, then search for the 
+prefab module in the package repository.
+---What a module-------------
+In Node.js, modules are files that can be imported into your 
+application using the "require()" function. They help organize code, 
+make it reusable and allow to share and use pre-built modules created by 
+other developers. To use a module, you pass its name as an argument to the 
+"require()" function.
