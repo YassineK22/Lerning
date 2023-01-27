@@ -1,0 +1,1 @@
+elsius is: %.1f", temp);
