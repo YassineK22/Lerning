@@ -18,6 +18,7 @@ print(list2)
 print("We have ",len(list2)," in our list")
 print()
 print("-----------------------")
-for i in list2:
-    print(i)
+print(*list2)
 print("-----------------------")
+
+
