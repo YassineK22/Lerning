@@ -1,9 +1,13 @@
-s = 'H!e ldllor oW'
-#Dedcode
-a = s[::2]
-if len(s)%2: s=s[:-1]
-b= s[::-2]
-print(a+b)
+# s = 'H!e ldllor oW'
+# #Dedcode
+# a = s[::2]
+# if len(s)%2: s=s[:-1]
+# b= s[::-2]
+# print(a+b)
+
+s= "Hel lo"
+a= s.split()
+print(a)
 
 #The same
 """s = input()

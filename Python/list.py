@@ -4,7 +4,6 @@ print(list1[0:4])
 print("Update")
 list2 = list1
 list2.append("END")
-list2.insert(1,"Minecraft")
 list2.insert(0,"Start")
 list2[2] = 9.7
 print(list2)
