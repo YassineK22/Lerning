@@ -1,83 +1,345 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/c9bcfb9689.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c9bcfb9689.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section class="mx-2 mx-md-0">
         <!-- A navigation menu -->
-        <div class="container">
-            <nav class="bg-light">
-                <div class="bg-secondary py-4"></div>
-            </nav>
-        </div>
+
+        <nav class="navbar navbar-expand-md fixed-top bg-light navbar-light">
+            <div class="container">
+                <a href="#" class="navbar-brand text-decoration-none text-dark fw-bold text-uppercase"><span
+                        class="bg-primary bg-gradient p-1 rounded-3 text-light">John</span> Doe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="text-decoration-none nav-link" href="#johndoe">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-decoration-none nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-decoration-none nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-decoration-none nav-link" href="#contact_details">Contact details</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- An introducory section -->
-        <section class="container py-5">
-            <div class="row gy-4 gy-md-0">
+        <section id="johndoe" class="container py-5 mt-4">
+            <div class="row gy-4 gy-md-0 align-items-center">
                 <div class="col-12 col-md-6">
-                    <span class="fs-2">I'm John Doe, Web Developer and Designer</span>
-                    <span class="fs-4">Welcom to my creative universe</span><br>
-                    <button>My web skills</button>
+                    <h1 class="fw-bold">I'm John Doe, Web Developer and Designer</h1>
+                    <h2 class="fw-light">Welcom to my creative universe</h2>
+                    <button class="mt-4 btn btn-primary">My web skills</button>
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="img/portrait.jpg" alt="MyProfilPicture" class="w-100">
                 </div>
             </div>
         </section>
-        <!-- A second section on technical skills. -->
-        <section class="py-5 bg-light  ">
+        <!-- A second section on technical Skills. -->
+        <section id="skills" class="py-5 bg-light  ">
             <div class="container">
-                <div class="row gy-4 gy-md-0">
-                    <span class="col-12 fs-2">My skills</span><br>
-                    <span class="col-12 fs-4">Web development and design</span>
-                    <div class="col-12 col-md-7 bg-secondary p-4 "></div>
+                <h2 class="mb-0">My skills</h2>
+                <h3 class="fw-light">Web development and design</h3>
+                <div class="row gy-4 mt-2 align-items-center">
+                    <div class="col-12 col-md-7">
+                        <!-- HTML5 -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-html5 fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">HTML5</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CSS3 -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-brands fa-css3-alt fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">CSS3</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- JS -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-brands fa-js fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">JS</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PHP -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-brands fa-php fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">PHP</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 17%"
+                                            aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SASS -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-brands fa-sass fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">SASS</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="col-12 col-md-4 offset-md-1"><img src="img/code.jpg" alt="My code" class="w-100"></div>
                 </div><br>
-                <div class="row gy-4 gy-md-0">
+                <div class="row gy-4 gy-md-0 align-items-center">
                     <div class="col-12 col-md-4 "><img src="img/design.jpg" alt="My code" class="w-100"></div>
-                    <div class="col-12 col-md-6 bg-secondary p-4 offset-md-2"></div>
+                    <div class="col-12 col-md-6 offset-md-2">
+                        <!-- Figma -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-brands fa-figma fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">Figma</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 45%"
+                                            aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adobe Suite -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-solid fa-photo-film fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">Adobe Suite</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- UI Design -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-sharp fa-solid fa-palette fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">UI Design</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 12%"
+                                            aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- UX Design -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-solid fa-vial fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">UX Design</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="4"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Video -->
+                        <div class="bg-white p-3 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-5 col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-solid fa-video fa-2x me-3 text-primary"></i>
+                                        <p class="fw-bold m-0">Video</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 47%"
+                                            aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>    
+        </section>
         <!-- A third section on projects. -->
-        <section  class="py-5">
+        <section id="portfolio" class="py-5">
             <div class="container">
-                <span class="fs-2">My portfolio</span><br>
-                <span class="fs-4">Personal and professional projects</span>
+                <h2 class="mb-0">My portfolio</h2>
+                <h3 class="fw-light">Personal and professional projects</h3>
                 <br><br>
-                <div class="row ">
-                    <div class="col-3"><div class="bg-secondary p-4"></div></div>
-                    <div class="col-3"><div class="bg-secondary p-4"></div></div>
-                    <div class="col-3"><div class="bg-secondary p-4"></div></div>
-                    <div class="col-3"><div class="bg-secondary p-4"></div></div>
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/300/150?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin.</p>
+                                <a href="#" class="btn btn-primary">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/300/150?random=2" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin.</p>
+                                <a href="#" class="btn btn-primary">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/300/150?random=3" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin.</p>
+                                <a href="#" class="btn btn-primary">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/300/150?random=4" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 4</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin.</p>
+                                <a href="#" class="btn btn-primary">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>    
+        </section>
         <!-- A final section for contact details. -->
-        <section class="bg-light py-5">
+        <section id="contact_details" class="bg-light py-5">
             <div class="container">
                 <div class="row gy-4 gy-md-0">
-                    <span class="col-12 fs-2">Have a web design project in mind?</span><br>
-                    <span class="col-12 fs-3 mb-4">Let's discuss it over a coffee!</span>
+                    <h2 class="col-12 mb-0">Have a web design project in mind?</h2><br>
+                    <h3 class="col-12 fw-light mb-4">Let's discuss it over a coffee!</h3>
                     <div class="col-12 col-md-4"><img src="img//grab-a-coffee.jpg" alt="TwoCoffe" class="w-100"></div>
                     <div class="bg-secondary offset-md-1 p-4 col-12 col-md-7"></div>
                 </div>
             </div>
-        </section>   
+        </section>
         <!-- A footer -->
         <footer class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-4"><div class="bg-secondary p-4"></div></div>
-                    <div class="col-4"><div class="bg-secondary p-4"></div></div>
-                    <div class="col-4"><div class="bg-secondary p-4"></div></div>
+                    <div class="col-4">
+                        <div class="mb-0"><a href="#"
+                                class="text-decoration-none text-dark fw-bold text-uppercase"><span
+                                    class="bg-primary bg-gradient p-1 rounded-3 text-light">John</span> Doe</a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center"><a href="#" class="text-decoration-none text-dark">Legal notice</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-md-end">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i
+                                            class="bi bi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
-    </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
